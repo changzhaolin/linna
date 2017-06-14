@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TextView 
+        android:id="@+id/text3"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+             android:background="@android:color/holo_blue_dark"
+        android:textSize="14sp"
+        android:textColor="#ffffff"
+        android:text="历史事件详情"/>
+
+     <ScrollView
+         android:id="@+id/scrollViews12"
+         android:layout_width="match_parent"
+         android:layout_below="@+id/text3"
+         android:layout_height="400dp" >
+
+        <RelativeLayout 
+            android:id="@+id/rl_top"
+            android:layout_width="match_parent" 
+            android:layout_height="400dp">
+
+    <TextView
+        android:id="@+id/tv_title1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:text="标题" />
+
+    <TextView
+        android:id="@+id/tv_des1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_below="@+id/tv_title1"
+        android:layout_marginTop="8dp"
+        android:text="事件简介" />
+    <TextView
+        android:id="@+id/tv_content1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_below="@+id/tv_des1"
+         
+        android:text="事件内容" />
+
+    <ImageView
+        android:id="@+id/iv_eventphoto1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+       android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_content1"
+      
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_nianfen1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/iv_eventphoto1"
+        android:layout_below="@+id/iv_eventphoto1"
+        android:layout_marginTop="22dp"
+       />
+
+    <TextView
+        android:id="@+id/tv_lunar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_nianfen1"
+        android:layout_alignBottom="@+id/tv_nianfen1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:text="TextView" />
+    </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

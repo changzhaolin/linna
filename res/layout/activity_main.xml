@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+    <Button
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        
+          android:background="@android:color/holo_blue_dark"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:text="历史话范"/>
+    <TextView 
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/text1"
+        android:background="#ffffff"
+         
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_news"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/text2"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rg_button" >
+        
+    </android.support.v4.view.ViewPager>
+
+    <RadioGroup
+        android:id="@+id/rg_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:checked="true"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_dark"
+            android:button="@null"
+            android:textColor="@drawable/selector_text"
+            android:gravity="center"
+            android:text="历史搜索" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+                 android:background="@android:color/holo_blue_dark"
+              android:textColor="@drawable/selector_text"
+            android:button="@null"
+            android:gravity="center"
+            android:text="历史推荐" />
+    </RadioGroup>
+
+</RelativeLayout>

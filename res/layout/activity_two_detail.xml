@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     
+    tools:context=".TwoDetailActivity" >
+    <TextView 
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="@android:color/holo_blue_dark"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:text="历史话范"/>
+   <ScrollView
+         android:id="@+id/scrollViews15"
+         android:layout_width="match_parent"
+         android:layout_below="@+id/text"
+         android:layout_height="match_parent" >
+         <RelativeLayout 
+             android:id="@+id/rl_detail"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+         
+    <TextView
+        android:id="@+id/tv_Detail_Tile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="标题" />
+    <org.yanzi.ui.HorizontalListView
+        android:id="@+id/horizon_listview"
+        android:layout_width="match_parent"
+        android:layout_height="150dip"
+        android:layout_below="@+id/tv_Detail_Tile"
+     
+        >
+    </org.yanzi.ui.HorizontalListView>
+
+    <TextView
+        android:id="@+id/tv_DetailContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/horizon_listview"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:text="TextView" />
+    
+    
+    <ImageView 
+        android:id="@+id/image_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_DetailContent"
+        android:layout_centerInParent="true"
+      	android:clickable="true"
+        android:background="@drawable/selector_imageview_background"
+        />
+    </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
